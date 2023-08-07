@@ -14,13 +14,11 @@ import CartWidget from "./CartWidget";
 
 const NavBar = () => {
   return (
-    <Flex>
-      <Box>Distribuidora Gente Amiga</Box>
-      <Spacer />
+    <Flex bg="#8f0000a1" p={10}>
       <Box>
         <Menu>
           <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
-            Actions
+            Menu
           </MenuButton>
           <MenuList>
             <MenuItem>Nosotros</MenuItem>
@@ -29,6 +27,8 @@ const NavBar = () => {
           </MenuList>
         </Menu>
       </Box>
+      <Spacer />
+      <Box>Distribuidora Gente Amiga</Box>
       <Spacer />
       <Box>
         <CartWidget />

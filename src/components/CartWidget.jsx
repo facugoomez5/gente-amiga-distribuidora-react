@@ -4,9 +4,9 @@ import { Flex, Box, Spacer } from "@chakra-ui/react";
 const CartWidget = () => {
   return (
     <Flex>
-      <Box>Carrito</Box>
+      <Box m={1}>Carrito</Box>
       <Spacer/>
-      <Box>5</Box>
+      <Box m={1}>5</Box>
     </Flex>
   );
 };
