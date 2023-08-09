@@ -1,0 +1,14 @@
+.tarjeta img {
+    width: 400px;
+}
+.tarjeta{
+    align-items: center;
+    text-align: center;
+    margin: 40px;
+}
+.css-k008qs{
+    justify-content: space-between ;
+    background-color: #8f0000a1;
+}
+
+

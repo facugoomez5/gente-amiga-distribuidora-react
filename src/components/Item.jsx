@@ -6,22 +6,30 @@ import {
   Stack,
   Divider,
   ButtonGroup,
-  Button
+  Button,
+  Heading,
+  Text,
+  Image
 } from "@chakra-ui/react";
 
-const Item = ({nombre, descripcion, stock}) => {
+const Item = ({nombre, descripcion, stock, img, precio}) => {
   return (
     <>
-      <Card maxW="sm">
+      <Card maxW="sm" className="tarjeta">
         <CardBody>
+          <Image
+            src={img}
+            alt="imagen"
+            borderRadius="lg"
+          />
           <Stack mt="6" spacing="3">
-            <h1 size="md">{nombre}</h1>
-            <h2>
+            <Heading size="md">{nombre}</Heading>
+            <Text>
               {descripcion}
-            </h2>
-            <p color="blue.600" fontSize="2xl">
-              {stock}
-            </p>
+            </Text>
+            <Text color="blue.600" fontSize="2xl">
+              ${precio}
+            </Text>
           </Stack>
         </CardBody>
         <Divider />
