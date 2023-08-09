@@ -11,10 +11,11 @@ import {
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import CartWidget from "./CartWidget";
+import brand from "../assets/Logo gente amiga.png";
 
 const NavBar = () => {
   return (
-    <Flex bg="#8f0000a1" p={10}>
+    <Flex bg="#8f0000a1"  alignItems="center">
       <Box>
         <Menu>
           <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
@@ -28,7 +29,9 @@ const NavBar = () => {
         </Menu>
       </Box>
       <Spacer />
-      <Box>Distribuidora Gente Amiga</Box>
+      <Box>
+        <img src={brand} alt="logo" width="110px"/>
+      </Box>
       <Spacer />
       <Box>
         <CartWidget />
